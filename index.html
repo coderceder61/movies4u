@@ -226,7 +226,7 @@ searchInput.addEventListener('input', async () => {
 
       if (query.length > 0) {
         try {
-          const response = await fetch(`https://api-consumet-one.vercel.app/meta/tmdb/${query}`);
+          const response = await fetch(`https://consumet-theta-nine.vercel.app/meta/tmdb/${query}`);
           const data = await response.json();
           // Display suggestions
         //   console.log(data)
@@ -273,7 +273,7 @@ function hideLoader() {
             // Make a GET request to a URL
               id.innerHTML = '<div id="loader"></div>' // Show spinner before fetching data
 
-fetch(`https://api-consumet-one.vercel.app/meta/tmdb/${document.getElementById('put').value}`)
+fetch(`https://consumet-theta-nine.vercel.app/meta/tmdb/${document.getElementById('put').value}`)
   .then(response => {
     // Check if the response is successful (status code 200-299)
     if (!response.ok) {
